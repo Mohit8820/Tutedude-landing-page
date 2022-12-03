@@ -2672,6 +2672,9 @@ footer a {
 }
 
 @media (max-width: 500px) {
+  .scroll {
+    padding-bottom: 5rem;
+  }
   .mview {
     display: inline;
   }

@@ -428,3 +428,11 @@ var rightbtn = document.querySelector(".right-btn");
 rightbtn.addEventListener("click", () => {
   sleft.click();
 });
+
+$(window).bind("scroll", function () {
+  if ($(window).scrollTop() > 100) {
+    $(".scroll").hide();
+  } else {
+    $("#myDivId").show();
+  }
+});

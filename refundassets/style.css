@@ -25,8 +25,7 @@ html {
   font-size: 1.6rem;
   padding: 0.8rem 1.2rem;
   border-radius: 0.5rem;
-  /*  display: none;
-   */
+  display: none;
 }
 .dropdown-content.name-dropdown {
   min-width: 100px;
@@ -1043,6 +1042,10 @@ h3 {
   background: #eae8e8;
 }
 @media (max-width: 500px) {
+  #loader {
+    top: 95vh;
+  }
+
   .int .gradText::after {
     height: 4rem;
     left: 0rem;

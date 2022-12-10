@@ -58,124 +58,14 @@ function detectHistory() {
   log.style.display = "none";
 }
 
-// var li = document.getElementById("ulist").getElementsByTagName("li");
-// var after = document.getElementById("ulist").getElementsByClassName("after");
-
-// var im = document.getElementById("im");
-// var images = [
-//   "category/courserefundassets/premium.webp",
-//   "category/courserefundassets/doubt.webp",
-//   "category/courserefundassets/assignments.webp",
-//   "category/courserefundassets/certificaterefund.webp",
-// ];
-// var x = -1;
-
-// for (var i = 0; i < 4; i++) {
-//   console.log(i);
-//   li[i].addEventListener("click", function () {
-//     var value = this.innerHTML;
-//     console.log(this.classList);
-
-//     this.classList.add("act");
-//     console.log(value);
-//     if (
-//       value == "Premium self paced course to learn at your own pace and time"
-//     ) {
-//       var val = 1;
-//     }
-//     if (value == "Instant 1:1 doubt solving throughout the day") {
-//       var val = 2;
-//     }
-//     if (value == "Awesome projects and assignments") {
-//       var val = 3;
-//     }
-//     if (value == "Get certified and receive 100% refund.") {
-//       var val = 4;
-//     }
-//     change(val);
-//   });
-// }
-
-// function change(val) {
-//   console.log(val);
-//   switch (val) {
-//     case 1:
-//       im.setAttribute("src", images[0]);
-//       li[0].classList.add("act");
-//       li[1].classList.remove("act");
-//       li[2].classList.remove("act");
-//       li[3].classList.remove("act");
-//       after[0].classList.add("after-act");
-//       after[1].classList.remove("after-act");
-//       after[2].classList.remove("after-act");
-//       after[3].classList.remove("after-act");
-//       x = -1;
-//       break;
-//     case 2:
-//       im.setAttribute("src", images[1]);
-//       li[0].classList.remove("act");
-//       li[1].classList.add("act");
-//       li[2].classList.remove("act");
-//       li[3].classList.remove("act");
-//       after[0].classList.remove("after-act");
-//       after[1].classList.add("after-act");
-//       after[2].classList.remove("after-act");
-//       after[3].classList.remove("after-act");
-//       x = 0;
-//       break;
-//     case 3:
-//       im.setAttribute("src", images[2]);
-//       li[0].classList.remove("act");
-//       li[1].classList.remove("act");
-//       li[2].classList.add("act");
-//       li[3].classList.remove("act");
-//       after[0].classList.remove("after-act");
-//       after[1].classList.remove("after-act");
-//       after[2].classList.add("after-act");
-//       after[3].classList.remove("after-act");
-//       x = 1;
-//       break;
-//     case 4:
-//       im.setAttribute("src", images[3]);
-//       li[0].classList.remove("act");
-//       li[1].classList.remove("act");
-//       li[2].classList.remove("act");
-//       li[3].classList.add("act");
-//       after[0].classList.remove("after-act");
-//       after[1].classList.remove("after-act");
-//       after[2].classList.remove("after-act");
-//       after[3].classList.add("after-act");
-
-//       x = 2;
-//       break;
-//   }
-// }
-
 function startTimer() {
   document.getElementById("see-all").click();
-  //   setInterval(displayNextImage, 2000);
 }
-// function displayNextImage() {
-//   x = x === images.length - 1 ? 0 : x + 1;
-//   im.src = images[x];
-//   li[0].classList.remove("act");
-//   li[1].classList.remove("act");
-//   li[2].classList.remove("act");
-//   li[3].classList.remove("act");
-//   after[0].classList.remove("after-act");
-//   after[1].classList.remove("after-act");
-//   after[2].classList.remove("after-act");
-//   after[3].classList.remove("after-act");
-//   li[x].classList.add("act");
-//   after[x].classList.add("after-act");
-// }
 
 var courseBtn = document.getElementsByClassName("courseBtn");
 
 var allcourse = document.getElementsByClassName("courses");
-/*************************change**************** */
 var allMviewcourse = document.getElementsByClassName("mview-course");
-/*************************change**************** */
 
 var all = allcourse.length;
 var technicalBtn = document.getElementById("technical-btn");
@@ -192,12 +82,10 @@ technicalBtn.onclick = function () {
   for (i = 0; i < all; i++) {
     allcourse[i].style.display = "none";
   }
-  /*************************change**************** */
 
   for (k = 0; k < allMviewcourse.length; k++) {
     allMviewcourse[k].style.setProperty("display", "none", "important");
   }
-  /*************************change**************** */
 
   for (j = 0; j < technical.length; j++) {
     technical[j].style.display = "block";
@@ -213,12 +101,10 @@ creativesBtn.onclick = function () {
   for (i = 0; i < all; i++) {
     allcourse[i].style.display = "none";
   }
-  /*************************change**************** */
 
   for (k = 0; k < allMviewcourse.length; k++) {
     allMviewcourse[k].style.setProperty("display", "none", "important");
   }
-  /*************************change**************** */
   for (j = 0; j < creatives.length; j++) {
     creatives[j].style.display = "block";
   }
@@ -233,12 +119,10 @@ artsBtn.onclick = function () {
   for (i = 0; i < all; i++) {
     allcourse[i].style.display = "none";
   }
-  /*************************change**************** */
 
   for (k = 0; k < allMviewcourse.length; k++) {
     allMviewcourse[k].style.setProperty("display", "none", "important");
   }
-  /*************************change**************** */
   for (j = 0; j < arts.length; j++) {
     arts[j].style.display = "block";
   }
@@ -253,12 +137,10 @@ businessBtn.onclick = function () {
   for (i = 0; i < all; i++) {
     allcourse[i].style.display = "none";
   }
-  /*************************change**************** */
 
   for (k = 0; k < allMviewcourse.length; k++) {
     allMviewcourse[k].style.setProperty("display", "none", "important");
   }
-  /*************************change**************** */
   for (j = 0; j < business.length; j++) {
     business[j].style.display = "block";
   }
@@ -272,12 +154,10 @@ seeAll.onclick = function () {
   for (i = 0; i < all; i++) {
     allcourse[i].style.display = "block";
   }
-  /*************************change**************** */
 
   for (k = 0; k < allMviewcourse.length; k++) {
     allMviewcourse[k].style.setProperty("display", "inline");
   }
-  /*************************change**************** */
   seeAll.classList.add("active-btn");
   technicalBtn.classList.remove("active-btn");
   businessBtn.classList.remove("active-btn");
@@ -289,25 +169,27 @@ var query = document.getElementsByClassName("query-asked");
 
 for (var i = 0; i < 4; i++) {
   query[i].addEventListener("click", function () {
-    // for (var j = 0; j < 4; j++) {
-    //   query[j].find(".query-ans").fadeOut();
-    // }
     $(".query-asked > .query-ans")
       .not($(this).children(".query-ans"))
       .fadeOut();
-    $(".query-asked > button")
-      .not($(this).children("button"))
-      .removeClass("button-border");
-    $(".query-asked > button>.minus")
-      .not($(this).children("button").children(".minus"))
+
+    $(".query-asked >.query-ques> button>.minus")
+      .not(
+        $(this).children(".query-ques").children("button").children(".minus")
+      )
       .hide();
-    $(".query-asked > button> .plus")
-      .not($(this).children("button").children(".plus"))
+    $(".query-asked >.query-ques> button> .plus")
+      .not($(this).children(".query-ques").children("button").children(".plus"))
       .show();
     $(".query-asked").not(this).removeClass("active-query", 500);
-    // $(this).children(".query-asked button").toggleClass("button-border");
-    var min = $(this).children(".query-asked button").children(".minus");
-    var plu = $(this).children(".query-asked button").children(".plus");
+    var min = $(this)
+      .children(".query-ques")
+      .children("button")
+      .children(".minus");
+    var plu = $(this)
+      .children(".query-ques")
+      .children("button")
+      .children(".plus");
     min.toggle();
     plu.toggle();
     var divToSlide = jQuery(this).children(".query-ans");
@@ -435,4 +317,49 @@ $(window).bind("scroll", function () {
   } else {
     $("#myDivId").show();
   }
+  width = 0;
+  if ($(window).scrollTop() > 200) {
+    $("#line").animate({ width: "100%" }, "slow", "linear");
+    // var id = setInterval(() => {
+    //   if (width >= 100) {
+    //     clearInterval(id);
+    //   } else {
+    //     width++;
+    //     $("#line").css("width", width + "%");
+    //   }
+    // }, 20);
+  } else {
+    $("#line").css("width", "0%");
+  }
 });
+
+AOS.init({
+  duration: 1000,
+  easing: "ease-in-out",
+});
+
+document.onreadystatechange = function () {
+  if (document.readyState !== "complete") {
+    // document.querySelector("body").style.visibility = "hidden";
+    document.querySelector("#loader").style.visibility = "visible";
+
+    var load = 10;
+    var id = setInterval(() => {
+      if (load >= 90) {
+        clearInterval(id);
+        $("#loader .counter").text("...");
+      } else {
+        load += 10;
+        $("#loader .counter").text(load);
+      }
+    }, 200);
+  } else {
+    $("#loader").animate({ borderWidth: "0" }, "slow");
+    document.querySelector(".counter").style.display = "none";
+    $("#after-load").css("visibility", "visible");
+    setTimeout(function () {
+      $("#loader").fadeOut("slow");
+      // document.querySelector("#loader").style.display = "none";
+    }, 2000);
+  }
+};

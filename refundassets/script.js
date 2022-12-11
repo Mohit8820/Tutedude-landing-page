@@ -311,32 +311,32 @@ rightbtn.addEventListener("click", () => {
   sleft.click();
 });
 
-$(window).bind("scroll", function () {
-  if ($(window).scrollTop() > 100) {
-    $(".scroll").hide();
-  } else {
-    $("#myDivId").show();
-  }
-  width = 0;
-  if ($(window).scrollTop() > 200) {
-    $("#line").animate({ width: "100%" }, "slow", "linear");
-    // var id = setInterval(() => {
-    //   if (width >= 100) {
-    //     clearInterval(id);
-    //   } else {
-    //     width++;
-    //     $("#line").css("width", width + "%");
-    //   }
-    // }, 20);
-  } else {
-    $("#line").css("width", "0%");
-  }
-});
+// $(window).bind("scroll", function () {
+//   if ($(window).scrollTop() > 100) {
+//     $(".scroll").hide();
+//   } else {
+//     $("#myDivId").show();
+//   }
+//   width = 0;
+//   if ($(window).scrollTop() > 200) {
+//     $("#line").animate({ width: "100%" }, "slow", "linear");
+//     // var id = setInterval(() => {
+//     //   if (width >= 100) {
+//     //     clearInterval(id);
+//     //   } else {
+//     //     width++;
+//     //     $("#line").css("width", width + "%");
+//     //   }
+//     // }, 20);
+//   } else {
+//     $("#line").css("width", "0%");
+//   }
+// });
 
-AOS.init({
-  duration: 1000,
-  easing: "ease-in-out",
-});
+// AOS.init({
+//   duration: 1000,
+//   easing: "ease-in-out",
+// });
 
 // document.onreadystatechange = function () {
 //   if (document.readyState !== "complete") {

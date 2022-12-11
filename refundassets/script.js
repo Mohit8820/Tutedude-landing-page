@@ -311,14 +311,14 @@ rightbtn.addEventListener("click", () => {
   sleft.click();
 });
 
-$(window).bind("scroll", function () {
-  if ($(window).scrollTop() > 100) {
+$(window).scroll(function () {
+  if ($(document).scrollTop() > 100) {
     $(".scroll").hide();
   } else {
-    $("#myDivId").show();
+    $(".scroll").show();
   }
 
-  if ($(window).scrollTop() > 200) {
+  if ($(document).scrollTop() > 200) {
     $("#line").animate({ width: "100%" }, "slow", "linear");
   }
 });

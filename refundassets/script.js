@@ -318,7 +318,13 @@ $(window).scroll(function () {
     $(".scroll").show();
   }
 
-  if ($(document).scrollTop() > 200) {
+  const triggerBottom = (window.innerHeight / 5) * 4;
+  var top = document.getElementById("line").getBoundingClientRect().top;
+
+  console.log("height", triggerBottom);
+  console.log("top", top);
+
+  if (top < triggerBottom) {
     $("#line").animate({ width: "100%" }, "slow", "linear");
   }
 });

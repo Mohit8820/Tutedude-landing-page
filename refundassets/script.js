@@ -338,28 +338,28 @@ AOS.init({
   easing: "ease-in-out",
 });
 
-document.onreadystatechange = function () {
-  if (document.readyState !== "complete") {
-    // document.querySelector("body").style.visibility = "hidden";
-    document.querySelector("#loader").style.visibility = "visible";
+// document.onreadystatechange = function () {
+//   if (document.readyState !== "complete") {
+//     // document.querySelector("body").style.visibility = "hidden";
+//     document.querySelector("#loader").style.visibility = "visible";
 
-    var load = 10;
-    var id = setInterval(() => {
-      if (load >= 90) {
-        clearInterval(id);
-        $("#loader .counter").text("...");
-      } else {
-        load += 10;
-        $("#loader .counter").text(load);
-      }
-    }, 200);
-  } else {
-    $("#loader").animate({ borderWidth: "0" }, "slow");
-    document.querySelector(".counter").style.display = "none";
-    $("#after-load").css("visibility", "visible");
-    setTimeout(function () {
-      $("#loader").fadeOut("slow");
-      // document.querySelector("#loader").style.display = "none";
-    }, 2000);
-  }
-};
+//     var load = 10;
+//     var id = setInterval(() => {
+//       if (load >= 90) {
+//         clearInterval(id);
+//         $("#loader .counter").text("...");
+//       } else {
+//         load += 10;
+//         $("#loader .counter").text(load);
+//       }
+//     }, 200);
+//   } else {
+//     $("#loader").animate({ borderWidth: "0" }, "slow");
+//     document.querySelector(".counter").style.display = "none";
+//     $("#after-load").css("visibility", "visible");
+//     setTimeout(function () {
+//       $("#loader").fadeOut("slow");
+//       // document.querySelector("#loader").style.display = "none";
+//     }, 2000);
+//   }
+// };

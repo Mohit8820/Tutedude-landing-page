@@ -317,20 +317,10 @@ $(window).bind("scroll", function () {
   } else {
     $("#myDivId").show();
   }
-  // width = 0;
-  // if ($(window).scrollTop() > 200) {
-  //   $("#line").animate({ width: "100%" }, "slow", "linear");
-  //   // var id = setInterval(() => {
-  //   //   if (width >= 100) {
-  //   //     clearInterval(id);
-  //   //   } else {
-  //   //     width++;
-  //   //     $("#line").css("width", width + "%");
-  //   //   }
-  //   // }, 20);
-  // } else {
-  //   $("#line").css("width", "0%");
-  // }
+
+  if ($(window).scrollTop() > 200) {
+    $("#line").animate({ width: "100%" }, "slow", "linear");
+  }
 });
 
 AOS.init({

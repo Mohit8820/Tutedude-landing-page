@@ -570,6 +570,7 @@ main .disFlex div:first-child h2 {
   text-align: left;
   margin-top: 4rem;
   width: 60%;
+  border: 1.3rem solid #fff;
 }
 #after-load span {
   font-size: 1.6rem;

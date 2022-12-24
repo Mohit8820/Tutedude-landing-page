@@ -2296,6 +2296,195 @@ footer a {
   gap: 2.5rem;
 }
 
+/****************/
+.pack-sec {
+  margin: auto;
+  width: 70vw;
+}
+.pack-cards {
+  gap: 7rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 4rem;
+}
+.pack {
+  width: 38.5rem;
+  height: 25rem;
+  background: #fef8f4;
+  box-shadow: 0px 0.2rem 1.3rem rgba(0, 0, 0, 0.15);
+  border-radius: 0.4rem;
+  color: #431943;
+  position: relative;
+  padding: 1.5rem;
+  padding-left: 9.5rem;
+}
+.pack::after {
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  border-left: 2rem solid #fff;
+  border-right: 2rem solid #fff;
+}
+.pack .circles {
+  width: 1.5rem;
+  height: 1.5rem;
+  border-radius: 50%;
+  background: #fff;
+  margin-bottom: 0.7rem;
+}
+.left-circles {
+  position: absolute;
+  left: 0;
+  top: 0;
+  transform: translate(-50%, 3%);
+}
+.right-circles {
+  position: absolute;
+  right: 0;
+  top: 0;
+  transform: translate(50%, 3%);
+}
+.right-circles .circles {
+  box-shadow: inset 0.1rem 0rem 0.6rem rgba(0, 0, 0, 0.12);
+}
+
+.pack .side-note {
+  font-weight: 300;
+  font-size: 1.6rem;
+  line-height: 124.5%;
+  text-align: center;
+  color: #ffffff;
+  height: 5.2rem;
+  width: 25rem;
+  background: #431943;
+  padding-top: 2rem;
+  position: absolute;
+  transform: rotate(-90deg);
+  top: 39.5%;
+  left: -26%;
+}
+.main-pack-content {
+  width: 25rem;
+}
+.pack h2 {
+  width: fit-content;
+  font-weight: 600;
+  font-size: 2.8rem;
+  line-height: 4.2rem;
+  background: linear-gradient(180deg, #0f0e0f 0%, #7e267e 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  border-bottom: 0.1rem dashed #d9d8d8;
+  position: relative;
+}
+.star-left {
+  position: absolute;
+  top: 50%;
+  left: -2.5rem;
+  transform: translateY(-50%);
+}
+.star-right {
+  position: absolute;
+  top: 50%;
+  right: -2.5rem;
+  transform: translateY(-50%);
+}
+.pack-info {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 1.8rem;
+}
+.pack-info p {
+  font-weight: 500;
+  font-size: 2.4rem;
+  line-height: 3.6rem;
+}
+.pack-info div {
+  height: 3rem;
+  width: 0;
+  border-left: 0.1rem dashed #d9d8d8;
+  position: relative;
+}
+.pack-info div::after {
+  content: "";
+  height: 0.7rem;
+  width: 0.7rem;
+  border-radius: 50%;
+  background: #d9d8d8;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: translate(-54%, -50%);
+}
+.pack-info div::before {
+  content: "";
+  height: 0.7rem;
+  width: 0.7rem;
+  border-radius: 50%;
+  background: #d9d8d8;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  transform: translate(-54%, 0%);
+}
+.pack-info h3 {
+  font-weight: 700;
+  font-size: 2.4rem;
+  line-height: 3.6rem;
+  color: #656565;
+  position: relative;
+}
+.pack-info h3::after {
+  content: "₹ 2796";
+  font-weight: 300;
+  font-size: 1.4rem;
+  line-height: 2.1rem;
+  position: absolute;
+  bottom: -1.5rem;
+  right: 0;
+  text-decoration-line: line-through;
+  color: #909090;
+}
+.pack-info.pi-2 h3::after {
+  content: "₹ 16077";
+}
+.pack span {
+  font-weight: 400;
+  font-size: 1.6rem;
+  line-height: 2.4rem;
+  display: block;
+  margin: 2.3rem auto;
+  color: #800080;
+}
+.pack button {
+  font-family: inherit;
+  width: 24.7rem;
+  height: 5rem;
+  background: #800080;
+  box-shadow: 0px 0px 2.2rem #d9d9d9;
+  border-radius: 2.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-transform: capitalize;
+  font-weight: 600;
+  font-size: 1.8rem;
+  color: #ffffff;
+}
+@media (max-width: 780px) {
+  .pack-cards {
+    flex-direction: column;
+    gap: 3.6rem;
+  }
+}
+
 /*.............*/
 @media (max-width: 1400px) {
   html {
